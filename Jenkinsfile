@@ -5,6 +5,7 @@ pipeline {
     // Use docker container
     docker {
       image 'ruby:2.3'
+      args '-u root:root'
     }
   }
   options {
